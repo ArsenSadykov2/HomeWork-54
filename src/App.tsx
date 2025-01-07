@@ -27,9 +27,13 @@ const App = () => {
   }
 
   return (
-    <>
-
-    </>
+      <>
+        <div className="board">
+          {blocks.map(block => (
+              <div onClick={() => clickOnBlock(block.id)} key={block.id} className={block.class}></div>
+          ))};
+        </div>
+      </>
   )
 };
 
