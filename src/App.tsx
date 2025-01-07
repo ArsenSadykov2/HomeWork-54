@@ -1,8 +1,28 @@
-
 import './App.css'
+import {useState} from "react";
+import {IBlock} from "./types";
 
 const App = () => {
+  const [blocks, setBlocks] = useState<IBlock[]>([]);
 
+  const createBoard = () => {
+    const blocksArray: IBlock[]  = [];
+
+    for(let i = 0; i < 36; i++) {
+      blocksArray.push({
+        hasItem: false,
+        id: i,
+        class: 'block',
+      });
+    }
+    setBlocks(blocksArray);
+  };
+
+  if(blocks.length === 0){
+    createBoard();
+  } else {
+    console.log(blocks);
+  }
 
   return (
     <>

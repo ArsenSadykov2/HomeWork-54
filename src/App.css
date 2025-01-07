@@ -1,0 +1,19 @@
+.board {
+    border: 2px solid black;
+    padding: 15px 25px 15px 25px;
+    width: 420px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    background: skyblue;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.block {
+    width: 60px;
+    height: 55px;
+    background: bisque;
+    padding: 2px;
+    margin: 2px;
+}
