@@ -15,6 +15,8 @@ const App = () => {
         class: 'block',
       });
     }
+    let randomIndex = Math.floor(Math.random() * blocksArray.length);
+    blocksArray[randomIndex].hasItem = true;
     setBlocks(blocksArray);
   };
 
