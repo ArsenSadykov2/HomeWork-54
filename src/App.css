@@ -24,3 +24,10 @@
     padding: 2px;
     background: skyblue;
 }
+.win {
+    width: 55px;
+    height: 55px;
+    padding: 2px;
+    background: url("assets/ninja.png") center no-repeat;
+    background-size: 50%;
+}
